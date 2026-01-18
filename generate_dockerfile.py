@@ -15,7 +15,8 @@ def generate_dockerfile(language):
     return response['message']['content']
 
 if __name__ == '__main__':
-    language = input("Enter the programming language: ")
+    #language = input("Enter the programming language: ")
+    language = "python"
     dockerfile = generate_dockerfile(language)
     print("\nGenerated Dockerfile:\n")
     print(dockerfile)
